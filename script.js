@@ -1,15 +1,12 @@
-function highlight() {
-    //Write your code here
-	
-
+let strong = document.getElementsByTagName('strong');
+function highlight(){
+    Array.from(strong).forEach(element => {
+        element.style.color = 'green';
+    });
 }
 
-
-function return_normal() {
-    //Write your code here
-	let strong = document.getElementsByTagName('strong');
-	strong.forEach((element) =>{
-		element.ClassList.addClass = 'green';
-	})
-    
+function return_normal(){
+    Array.from(strong).forEach(element => {
+        element.style.color = '';
+    });
 }
